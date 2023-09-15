@@ -2,6 +2,17 @@ body{
   background-color:black;
   
 }
+
+  body:hover{
+    text-decoration: underline;
+    animation: blue spin 5s infinite;
+  @keyframes spin {
+    to{
+      transform: rotate(3 turn);
+    }
+  }
+  }
+
 #Mercury{
   height: 100px;
   width: 100px;
@@ -110,6 +121,7 @@ z-index: 1;
   font-size: 30px;
   font-weight: bold;
   background: linear-gradient(to top,#2E5D9D,#3160a2,#5284ca,#1e3b54);
+
 }
 
 #Pluto{
