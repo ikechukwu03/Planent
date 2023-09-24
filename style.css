@@ -1,196 +1,279 @@
 body{
-  background-color:black;
+background: black;
+margin: 0px;
+padding: 0px;
   
 }
+.sun{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: -4px 2px 40px #f9c05f;
+  background-color: red;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+  
 
-  body:hover{
-    text-decoration: underline;
-    animation: blue spin 5s infinite;}
-    
-  @keyframes spin {
-    to{
-      transform: rotate(3 turn);
-    }
+.mercury{
+  height: 20px;
+  width: 20px;
+  background: linear-gradient( to top,#807e7d,#6B6969,#555454, #403f3f,#2b2a2a, #403f3f);
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: -4px 2px 40px #f9c05f;
+  transform: translate(-50%, -50%);
+  animation: orbit2 3s linear infinite;
+  left: 50%;
+  top: 49%;
+}
+
+@keyframes orbit2{
+  from{transform:rotate(0deg) translateX(70px) rotate(0deg);}
+  to{transform:rotate(360deg) translateX(70px) rotate(-360deg);}
+  }
+
+  .mercury-outline,.venus-outline,.earth-outline,.mars-outline,.jupiter-outline,.saturn-outline,
+  .uranus-outline,.neptune-outline{
+    border-radius: 50%;
+    border: 1px dotted #ddd9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .mercury-outline{
+    height:140px;
+    width: 140px;
+  }
+
+  .mercury span{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    left: 20px;
   }
   
 
-#Mercury{
-  height: 100px;
-  width: 100px;
-  background: linear-gradient( to top,#807e7d,#6B6969,#555454, #403f3f,#2b2a2a, #403f3f);
-  margin: 30px 0px 0px 95px;
-  position: relative;
-  border-radius: 50%;
-}
-#Mercury span{
-  position: absolute;
-  color: white;
-  font-weight: bold;
-  text-align: right;
-  font-size: 30px;
-  left: 120%;
-}
-
-#Venus{
-  height: 100px;
-  width:100px;
-  border-radius: 50%;
-  margin: 40px 0px 0px 95px;
-  position: relative;
+.venus{ 
+  height: 35px;
+  width: 35px;
   background: linear-gradient( to top, #d43b36,#df666f, #d94b55,#24303b);
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: -4px 2px 40px #f9c05f;
+  transform: translate(-50%, -50%);
+  animation: orbit3 10s linear infinite;
+  left: 48%;
+  top: 48%;
 }
-#Venus span{
+
+@keyframes orbit3{
+  from{transform:rotate(0deg) translateX(100px) rotate(0deg);}
+  to{transform:rotate(360deg) translateX(100px) rotate(-360deg);}
+  }
+.venus-outline{
+  height:200px;
+  width: 200px;}
+
+.venus span{
   position: absolute;
   color: white;
   font-weight: bold;
-  text-align: right;
-  font-size: 30px;
-  left: 120%;
+  font-size: 20px;
+  left: 100%;
 }
 
-#Earth{
-  height: 100px;
-  width:100px;
+.earth{
+  height: 50px;
+  width: 50px;
+  position: absolute;
   border-radius: 50%;
-  margin: 50px 0px 0px 95px;
-  position: relative;
+  box-shadow: -4px 2px 40px #2855d6;
+  transform: translate(-50%, -50%);
+  animation: orbit4 20s linear infinite;
+  left: 47%;
+  top: 44%;
   background: linear-gradient(to bottom, Royalblue, Royalblue,green);
 }
-#Earth span{
+.earth span{
   position: absolute;
   color: white;
   font-weight: bold;
-  text-align: right;
-  font-size: 30px;
-  left: 120%;
+  font-size: 20px;
+  left: 110%;
 }
+.earth-outline{
+  height:300px;
+  width: 300px;
+}
+  @keyframes orbit4{
+    from{transform:rotate(0deg) translateX(150px) rotate(0deg);}
+    to{transform:rotate(360deg) translateX(150px) rotate(-360deg);}
+    }
 
-#Mars{
-  height: 100px;
-  width:100px;
+
+.mars{
+  height: 30px;
+  width: 30px;
+  position: absolute;
   border-radius: 50%;
-  margin: 60px 0px 0px 95px;
-  color: white;
-  position: relative;
+  box-shadow: -4px 2px 40px #fea535;
+  transform: translate(-50%, -50%);
+  animation: orbit5 40s linear infinite;
+  left: 46.5%;
+  top: 46.5%;
   background: linear-gradient(to top, #d43b36, #df666f, #d94b55, #24303b);
 }
-#Mars span{
+.mars span{
   position: absolute;
   color: white;
   font-weight: bold;
-  text-align: right;
-  font-size: 30px;
-  left: 120%;
+  font-size: 20px;
+  left: 100%;
 }
+@keyframes orbit5{
+  from{transform:rotate(0deg) translateX(185px) rotate(0deg);}
+  to{transform:rotate(360deg) translateX(185px) rotate(-360deg);}
+  }
+  .mars-outline{
+    height:370px;
+    width: 370px;
+  }
 
-#Jupiter{
-  position: relative;
-  height: 100px;
-  width:100px;
+
+.jupiter{ 
+  height: 45px;
+  width: 45px;
+  position: absolute;
   border-radius: 50%;
-  margin: 70px 0px 0px 95px;
+  box-shadow: -4px 2px 40px #cac2b9;
+  transform: translate(-50%, -50%);
+  animation: orbit6 60s linear infinite;
+  left: 48%;
+  top: 46%;
   background: linear-gradient(to top,#757A5B,#C19770,#D5B895,#FAF0DC,#EBDCB5,#757A5B,#C19770,
   #D5B895,#FAF0DC,#EBDCB5);
 }
-#Jupiter span{
+
+@keyframes orbit6{
+  from{transform:rotate(0deg) translateX(217px) rotate(0deg);}
+  to{transform:rotate(360deg) translateX(217px) rotate(-360deg);}
+  }
+
+  .jupiter-outline{
+    height:430px;
+    width: 430px;
+  }
+
+.jupiter span{
   position: absolute;
   color: white;
   font-weight: bold;
-  text-align: right;
-  font-size: 30px;
+  font-size: 20px;
   left: 120%;
 }
 
-#Saturn{
-  position: relative;
-  height: 100px;
-  width:100px;
-  margin: 70px 0px 0px 95px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.saturn{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: -4px 2px 40px #cac2b9;
+  transform: translate(-50%, -50%);
+  animation: orbit7 150s linear infinite;
+  left: 47%;
+  top: 48%;
+  background-image:url(https://cdn.britannica.com/00/81400-050-8BBE1CDA/Saturn-rings-composite-images-spacecraft-Cassini-Shadows-October-6-2004.jpg);
+  background-size: 100%;
 }
-#Saturn span{
+
+@keyframes orbit7{
+  from{transform:rotate(0deg) translateX(250px) rotate(0deg);}
+  to{transform:rotate(360deg) translateX(250px) rotate(-360deg);}
+  }
+
+  .saturn-outline{
+    height:500px;
+    width: 500px;
+  }
+
+.saturn span{
   position: absolute;
   color: white;
   font-weight: bold;
-  text-align: right;
-  font-size: 30px;
-  left: 140%;
+  font-size: 20px;
+  left: 80.5%;
 }
-#Saturn .globe {
+
+
+
+.Uranus{
+  height: 30px;
+  width: 30px;
   position: absolute;
-  height: 100px;
-  width:100px;
   border-radius: 50%;
-  color: white;
-  text-align: right;
-  font-size: 30px;
-  font-weight: bold;
-  background: linear-gradient(to top,#ceb8b8,#ead6b8,#e3e0c0,#bfbdaf,
-#cecece,#ceb8b8,#ead6b8,#e3e0c0,#bfbdaf,#cecece);
-}
-#Saturn .rings{
-  height: 10px;
-  width:150px;
-  border-radius: 30%;
-  flex: none;
-  background: linear-gradient(to top,#ceb8b8,#ead6b8,#e3e0c0,#bfbdaf,
-  #cecece,#ceb8b8,#ead6b8,#e3e0c0,#bfbdaf,#cecece);
-  rotate: -9deg;
-}
-
-
-#Uranus{
-  height: 100px;
-  width:100px;
-  border-radius: 50%;
-  margin: 85px 0px 0px 95px;
-  position: relative;
+  box-shadow: -4px 2px 40px #cac2b9;
+  transform: translate(-50%, -50%);
+  animation: orbit8 200s linear infinite;
+  left: 48%;
+  top: 48%;
   background: linear-gradient(to top,#9ceDea,#52cbdb,#186c78);
 }
-#Uranus span{
+
+@keyframes orbit8{
+  from{transform:rotate(0deg) translateX(280px) rotate(0deg);}
+  to{transform:rotate(360deg) translateX(280px) rotate(-360deg);}
+  }
+
+  .uranus-outline{
+    height:560px;
+    width: 560px;
+  }
+
+.Uranus span{
   position: absolute;
   color: white;
   font-weight: bold;
-  text-align: right;
-  font-size: 30px;
-  left: 120%;
+  font-size: 20px;
+  left: 100%;
 }
 
-#Neptune{
-  height: 100px;
-  width:100px;
+.Neptune{
+  height: 40px;
+  width: 40px;
+  position: absolute;
   border-radius: 50%;
-  margin: 95px 0px 0px 95px;
-  position: relative;
+  box-shadow: -4px 2px 40px #cac2b9;
+  transform: translate(-50%, -50%);
+  animation: orbit9 250s linear infinite;
+  left: 48%;
+  top: 48%;
   background: linear-gradient(to top,#2E5D9D,#3160a2,#5284ca,#1e3b54);
 }
-#Neptune span{
-  position: absolute;
-  color: white;
-  font-weight: bold;
-  text-align: right;
-  font-size: 30px;
-  left: 120%;
+
+@keyframes orbit9{
+  from{transform:rotate(0deg) translateX(310px) rotate(0deg);}
+  to{transform:rotate(360deg) translateX(310px) rotate(-360deg);}
 }
 
-#Pluto{
-  height: 100px;
-  width:100px;
-  border-radius: 50%;
-  margin: 100px 0px 0px 95px;
-  position: relative;
-  background: #7B3F00;
+.neptune-outline{
+  height:620px;
+  width: 620px;
 }
-#Pluto span{
+
+.Neptune span{
   position: absolute;
   color: white;
   font-weight: bold;
-  text-align: right;
-  font-size: 30px;
-  left: 120%;
+  font-size: 20px;
+  left: 99%;
 }
+
+
 
 h1{
   text-align: center;
