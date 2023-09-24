@@ -182,13 +182,15 @@ padding: 0px;
   width: 30px;
   position: absolute;
   border-radius: 50%;
-  box-shadow: -4px 2px 40px #cac2b9;
+  /* box-shadow: -4px 2px 40px #cac2b9; */
   transform: translate(-50%, -50%);
   animation: orbit7 150s linear infinite;
   left: 47%;
   top: 48%;
   background-image:url(https://cdn.britannica.com/00/81400-050-8BBE1CDA/Saturn-rings-composite-images-spacecraft-Cassini-Shadows-October-6-2004.jpg);
-  background-size: 100%;
+  /* back */
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @keyframes orbit7{
