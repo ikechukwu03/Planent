@@ -26,7 +26,7 @@ padding: 0px;
   box-shadow: -4px 2px 40px #f9c05f;
   transform: translate(-50%, -50%);
   animation: orbit2 3s linear infinite;
-  left: 50%;
+  left: 49%;
   top: 49%;
 }
 
@@ -124,8 +124,8 @@ padding: 0px;
   box-shadow: -4px 2px 40px #fea535;
   transform: translate(-50%, -50%);
   animation: orbit5 40s linear infinite;
-  left: 46.5%;
-  top: 46.5%;
+  left: 49.5%;
+  top: 49.5%;
   background: linear-gradient(to top, #d43b36, #df666f, #d94b55, #24303b);
 }
 .mars span{
@@ -178,8 +178,8 @@ padding: 0px;
 }
 
 .saturn{
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   position: absolute;
   border-radius: 50%;
   /* box-shadow: -4px 2px 40px #cac2b9; */
@@ -283,4 +283,167 @@ h1{
   color:paleturquoise;
   text-transform: uppercase;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .sun{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    box-shadow: -4px 2px 40px #f9c05f;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @keyframes orbit2{
+    from{transform:rotate(0deg) translateX(33px) rotate(0deg);}
+    to{transform:rotate(360deg) translateX(33px) rotate(-360deg);}
+    }
+  .mercury{
+    height: 10px;
+    width: 10px;
+    top: 49%;
+    left: 48.8%;
+  }
+  .mercury-outline{
+    height:70px;
+    width: 70px;
+  }
+  .mercury span{
+    font-size: 10px;
+    left: 10px;
+  }
+  @keyframes orbit3{
+    from{transform:rotate(0deg) translateX(54px) rotate(0deg);}
+    to{transform:rotate(360deg) translateX(54px) rotate(-360deg);}
+    }
+  .venus{ 
+    height: 17.5px;
+    width: 17.5px;
+    left: 47%;
+  top: 48.4%;
+  }
+  .venus-outline{
+    height:100px;
+    width: 100px;
+  }
+  .venus span{
+    font-size: 10px;
+    left: 100%;
+  }
+  @keyframes orbit4{
+    from{transform:rotate(0deg) translateX(80px) rotate(0deg);}
+    to{transform:rotate(360deg) translateX(80px) rotate(-360deg);}
+    }
+  .earth{
+    height: 25px;
+    width: 25px;
+    left: 47.5%;
+  top: 47.5%;
+  }
+  .earth span{
+    font-size: 10px;
+    left: 100%;
+  }
+  .earth-outline{
+    height:150px;
+    width: 150px;
+  }
+  @keyframes orbit5{
+    from{transform:rotate(0deg) translateX(185px) rotate(0deg);}
+    to{transform:rotate(360deg) translateX(185px) rotate(-360deg);}
+    }
+    .mars{
+      height: 15px;
+      width: 15px;
+    }
+    .mars span{
+      font-size: 10px;
+      left: 100%;
+    }
+    .mars-outline{
+      height:185px;
+      width: 185px;
+    }
+    @keyframes orbit5{
+      from{transform:rotate(0deg) translateX(92px) rotate(0deg);}
+      to{transform:rotate(360deg) translateX(92px) rotate(-360deg);}
+      }
+  .jupiter{
+    height: 24.5px;
+    width: 24.5px;
+    left: 47.5%;
+    top: 48%
+  }
+  .jupiter span{
+    font-size: 10px;
+    left: 100%;
+  }
+  @keyframes orbit6{
+    from{transform:rotate(0deg) translateX(108.5px) rotate(0deg);}
+    to{transform:rotate(360deg) translateX(108.5px) rotate(-360deg);}
+    }
+  
+    .jupiter-outline{
+      height:215px;
+      width: 215px;
+    }
+  .saturn{
+    height: 25px;
+    width: 25px;
+  }
+  .saturn span{
+    font-size: 10px;
+    left: 100%;
+  }
+  @keyframes orbit7{
+    from{transform:rotate(0deg) translateX(125px) rotate(0deg);}
+    to{transform:rotate(360deg) translateX(125px) rotate(-360deg);}
+    }
+  
+    .saturn-outline{
+      height:250px;
+      width: 250px;
+    }
+  .Uranus{
+    height: 15px;
+   width: 15px;
+   left: 47%;
+  top: 48%;
+  }
+  .Uranus span{
+    font-size: 10px;
+    left: 100%;
+  }
+@keyframes orbit8{
+  from{transform:rotate(0deg) translateX(140px) rotate(0deg);}
+  to{transform:rotate(360deg) translateX(140px) rotate(-360deg);}
+  }
+
+  .uranus-outline{
+    height:280px;
+    width: 280px;
+  }
+  .Neptune{
+    height: 20px;
+    width: 20px;
+    left: 48.5%;
+    top: 49%;
+  }
+  .Neptune span{
+    font-size: 10px;
+    left: 100%;
+  }
+  @keyframes orbit9{
+    from{transform:rotate(0deg) translateX(155px) rotate(0deg);}
+    to{transform:rotate(360deg) translateX(155px) rotate(-360deg);}
+  }
+  
+  .neptune-outline{
+    height:310px;
+    width: 310px;
+  } 
+ 
 }
